@@ -1,0 +1,329 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:700|Open+Sans:300,400i,600,700');
+
+#tact-btn {  
+  background-color: #FF2222;
+  border: none;
+  border-radius: 30px;
+  color: white;
+  margin: 5px 5px 5px 10px; 
+  padding: 3px 10px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  float: right;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, .3);
+}
+
+.inline {
+  display: inline-block;
+}
+
+/*******************************************************************/
+/* modal */
+#tact-modal {
+  position: fixed;
+  z-index: 10000;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+#tact-modal-in {
+  width: 1000px;
+  height: 560px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 60px auto;
+}
+
+#modal-header {
+  width: 100%;
+  height: 40px;
+  top: 0;
+  background-color: #484848;
+  border-radius: 5px 5px 0 0;
+  border-bottom: solid 4px #B4B4B4;
+}
+
+#tact-logo {
+  width: 100px;
+  height: 40px;
+  margin: 0 800px 0 0;
+}
+
+#tact-logo img{
+  width: 48px;
+  margin: 8px 0 0 8px;
+}
+
+#modal-confirm {
+  width: 70px;
+  height: 18px;
+  transform: translate(10px, -10px);
+  border: solid 1.8px #C9C9C9;
+  border-radius: 30px;
+  color: #C9C9C9;
+  font-size: 12px;
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+
+/*******************************************************************/
+
+#modal-left {
+  width: 660px;
+  height: 436px;
+  padding: 40px 0 40px 40px;
+  font-family: 'Open Sans', sans-serif;
+/*  transform: translateY(-140px);*/
+}
+
+#modal-left-1 {
+  position: absolute;
+  top: 140px;
+  width: 660px;
+  height: 120px;
+  display: block;
+}
+
+#modal-text-instruct {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #95989A;
+}
+
+#modal-text {
+  width: 639px;
+  height: 70px;
+  font-size: 16px; 
+  line-height: 25px;
+  margin: 0;
+  border-radius: 3px;
+  border: solid 0.2px #C1C1C1;
+  text-decoration: none;
+  resize: none;
+  padding: 10px;
+  background-color: #F8F8F8;
+}
+
+input:focus {
+  outline: none;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+#modal-left-2 {
+  position: absolute;
+  top: 260px;
+  width: 649px;
+  height: 40px;
+  font-size: 14px;
+  border-radius: 3px;
+  border: solid 0.2px #C1C1C1;
+  background-color: #FFE6E6;
+  line-height: 40px;
+  padding-left: 10px;
+  margin-top: 20px;
+  display: block;
+}
+
+#modal-left-3 {
+  position: absolute;
+  top: 340px;
+  width: 660px;
+  height: 237px;
+  display: block;
+}
+
+#modal-hr-v {
+  width: 0.5px;
+  height: 436px;
+  margin: 40px 30px;
+  background-color: #BEBEBE;
+}
+
+/*******************************************************************/
+
+#modal-right {
+  width: 190px;
+  height: 436px;
+  margin: 40px 40px 40px 0;
+}
+
+/*donut chart in modal*/
+#modal-right-1 {
+  position: absolute;
+  top: 160px;
+  width: 190px;
+  height: 210px;
+  margin: 0;
+  border-bottom: solid 0.5px #BEBEBE;
+}
+
+/*donut chart content*/
+#tactly-chart {
+  margin-left: 10px;
+}
+
+#chart-info {
+  position: absolute;
+  top: 30px;
+  width: 152px;
+  margin-left: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#chart-ratio {
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 58px;
+}
+
+#chart-ratio-s {
+  font-size: 55px;
+  font-weight: 300;
+  line-height: 58px;
+}
+
+#chart-desc {
+  font-size: 12px;
+  color: #838383;
+  width: 100px;
+  margin-left: 25px;
+}
+
+#chart-desc span {
+  font-weight: 700;
+}
+
+#modal-right-2 {
+  position: absolute;
+  top: 380px;
+  width: 190px;
+  height: 60px;
+  margin: 20px 0;
+}
+
+#tact-amount {
+  width: 40px;
+  height: 60px;
+  font-size: 40px;
+  font-family: 'Arimo', sans-serif;
+}
+
+#tact-amount-disc {
+  width: 140px;
+  height: 60px;
+  font-size: 13px;
+  font-family: 'Open Sans', sans-serif;
+  color: #838383;
+  letter-spacing: 0.5px;
+}
+
+/*******************************************************************/
+/* confirm box 1 */
+#confirm-one {
+  position: fixed;
+  z-index: 10001;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  background-color: rgba(10, 10, 10, 0.5);
+}
+
+#confirm-one-in {
+  width: 300px;
+  height: 420px;
+  background-color: white;
+  border-radius: 5px;
+  margin: 120px auto;
+  padding: 20px;
+}
+
+/* x.png in confirm one */
+#closex-one {
+  float: right;
+  width: 15px;
+  height: 15px;
+}
+
+/* text content in confirm one */
+#confirm-one-text {
+  text-align: center;
+}
+
+#confirm-one-title {
+	font-size: 24px;
+	line-height: 17px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+#comfirm-one-p {
+	font-size: 15px;
+	line-height: 22px;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 300;
+	width: 260px;
+	margin: 0 auto;
+	letter-spacing: 0.5px;
+}
+
+/* donut chart container */
+#confirm-one-d3 {
+	width: 170px;
+	height: 170px;
+	margin: 40px auto;
+  transform: translateX(-10px);
+}
+
+#chart-info-c1 {
+  transform: translateY(-145px);
+  width: 152px;
+  margin-left: 20px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* confirm one buttons container */
+#confirm-one-btns {
+  font-size: 13px;
+  width: 240px;
+  margin: 0 auto;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0.5px;
+}
+
+#confirm-one-back {
+  width: 100px;
+  height: 20px;
+  border: solid 1.8px black;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  margin-right: 17px;
+}
+
+#confirm-one-confirm {
+  width: 100px;
+  height: 20px;
+  border: solid 1.8px black;
+  border-radius: 30px;
+  text-align: center;
+  cursor: pointer;
+  margin-left: 17px;
+}
+

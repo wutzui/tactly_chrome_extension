@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css?family=Arimo:700|Open+Sans:300,400i,600,700');
+
+body {
+  width: 200px;
+  height: 80px;
+  font-family: 'Open Sans', sans-serif;
+  padding: 10px;
+}
+
+.inline {
+	display: inline-block;
+}
+
+#title {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin: 0 auto;
+}
+
+#title img {
+	width: 60px;
+}
+
+#title span {
+	font-weight: 300;
+}
+
+.title-text {
+	transform: translateY(-8px);
+}
+
+#switch-container {
+	margin-top: 10px;
+}
+
+.switch-text p{
+	font-size: 13px;
+	transform: translateY(-6px);
+}
+
+/* The switch - the box around the slider */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 40px;
+  height: 20px;
+  margin-left: 74px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {display:none;}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 2px;
+  bottom: 2px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #FF2222;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #FF2222;
+}
+
+input:checked + .slider:before {
+  transform: translateX(20px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 20px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+hr {
+  border: 0;
+  background-color: #DEDEDE;
+  height: 0.5px;
+}
+
+

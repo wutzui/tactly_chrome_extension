@@ -1,0 +1,47 @@
+{
+    //Required.
+    "manifest_version": 2,
+    "name": "tactly",
+    "description": "a tool that helps user to moderate the word usage on the social platforms.",
+    "version": "1.0",
+
+    "browser_action": {
+        "default_icon": "icon.png", // extension icon.
+        "default_popup": "popup.html", // popup box content.
+        "default_title": "Click here!" // mouse hover.
+    },
+
+    "icons": {
+        "128": "icon.png" // extension icon - in setting pages.
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["https://www.facebook.com/*",
+                "https://www.youtube.com/*",
+                "https://twitter.com/*"
+            ], 
+            "css": ["css/contentstyle.css"],
+            "js": ["jquery.js", "d3.min.js", "bundle.js"],
+            "run_at": "document_end" // run at start.
+        }
+    ],
+    "background": {
+            "persistent": true,
+            "scripts": ["jquery.js", "background.js"]
+    },
+
+    "web_accessible_resources": [
+        "tactly_logo.png",
+        "x.png",
+        "d3.min.js",
+        "content.js"
+    ],
+
+    "permissions": [
+    	"activeTab",
+        // "storage",
+    	"https://www.facebook.com/*" // match all webpages.
+    ]
+
+}
