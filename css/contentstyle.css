@@ -140,9 +140,10 @@ textarea:focus {
 #modal-left-3 {
   position: absolute;
   top: 340px;
-  width: 660px;
+  width: 680px;
   height: 237px;
   display: block;
+  overflow:auto;
 }
 
 #modal-hr-v {
@@ -216,14 +217,14 @@ textarea:focus {
 }
 
 #tact-amount {
-  width: 40px;
+  width: 60px;
   height: 60px;
   font-size: 40px;
   font-family: 'Arimo', sans-serif;
 }
 
 #tact-amount-disc {
-  width: 140px;
+  width: 120px;
   height: 60px;
   font-size: 13px;
   font-family: 'Open Sans', sans-serif;
@@ -327,3 +328,26 @@ textarea:focus {
   margin-left: 17px;
 }
 
+/*******************************************************************/
+.neg-div {
+  width: 324px;
+  height: 30px;
+  background-color: #F8F8F8;
+  display: inline-block;
+  border-radius: 3px;
+  margin-right: 16px;
+  margin-bottom: 16px;
+}
+
+.neg-text {
+  margin-left: 10px;
+  display: inline-block;
+  font-size: 13px;
+  line-height: 30px;
+  letter-spacing: 0.5px;
+}
+
+.neg-score {
+  display: inline-block;
+  float: right;
+}
