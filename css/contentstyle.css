@@ -125,16 +125,114 @@ textarea:focus {
 #modal-left-2 {
   position: absolute;
   top: 260px;
-  width: 649px;
+  width: 651px;
   height: 40px;
   font-size: 14px;
   border-radius: 3px;
-  border: solid 0.2px #C1C1C1;
-  background-color: #FFE6E6;
   line-height: 40px;
   padding-left: 10px;
   margin-top: 20px;
   display: block;
+  -webkit-animation: 0.25s fade_in ease-in forwards;
+  -moz-animation: 0.25s fade_in ease-in forwards;
+  -ms-animation: 0.25s fade_in ease-in forwards;
+  animation: 0.25s fade_in ease-in forwards;
+}
+
+.modal-left-2-red {
+  background-color: #FFE6E6;c
+  transition: 0.2s ease-in;
+}
+
+.modal-left-2-blue {
+  background-color: #CAF0FF;
+  transition: 0.2s ease-in;
+}
+
+#face {
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+  margin-top: 9px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+
+.face-red {
+  border: solid 2px #FF2222;  
+}
+
+.face-blue {
+  border: solid 2px #31CFFF;  
+}
+
+.face-red:before {
+  content: '';
+  position: absolute;
+  right: 23px;
+  top: 16px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #FF2222;
+}
+.face-red:after {
+  content: '';
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #FF2222;
+}
+
+.face-blue:before {
+  content: '';
+  position: absolute;
+  right: 23px;
+  top: 16px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #31CFFF;
+}
+.face-blue:after {
+  content: '';
+  position: absolute;
+  right: 16px;
+  top: 16px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #31CFFF;
+}
+
+.mouth-red {
+  position: absolute;
+  right: 14px;
+  top: 22px;
+  width: 10px;
+  height: 7px;
+  border-radius: 50%;
+  border-top: solid 2px #FF2222;
+  border-bottom: solid 2px transparent;
+  border-left: solid 2px transparent;
+  border-right: solid 2px transparent;
+}
+
+.mouth-blue {
+  position: absolute;
+  right: 14px;
+  top: 14px;
+  width: 10px;
+  height: 7px;
+  border-radius: 50%;
+  border-top: solid 2px transparent;
+  border-bottom: solid 2px #31CFFF;
+  border-left: solid 2px transparent;
+  border-right: solid 2px transparent;
 }
 
 #modal-left-3 {
@@ -144,6 +242,7 @@ textarea:focus {
   height: 237px;
   display: block;
   overflow:auto;
+  transition: 0.2s ease-in;
 }
 
 #modal-hr-v {
@@ -335,7 +434,7 @@ textarea:focus {
   background-color: #F8F8F8;
   display: inline-block;
   border-radius: 3px;
-  margin-right: 16px;
+  margin-right: 14px;
   margin-bottom: 16px;
 }
 
@@ -346,8 +445,93 @@ textarea:focus {
   line-height: 30px;
   letter-spacing: 0.5px;
 }
+.neg-score-num {
+  display: inline-block;
+  float: right;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 30px;
+  color: grey;
+  letter-spacing: 0.25px;
+}
 
 .neg-score {
   display: inline-block;
   float: right;
+  height: 5px;
+  background-color: #FF2222;
+  border-radius: 5px;
+  margin: 12.5px;
 }
+
+/*******************************************************************/
+/*!
+ * jQuery highlightTextarea
+ * Copyright 2014-2015 Damien "Mistic" Sorel (http://www.strangeplanet.fr)
+ * Licensed under MIT (http://opensource.org/licenses/MIT)
+ */
+
+.highlightTextarea {
+  position:relative;
+}
+.highlightTextarea .highlightTextarea-container {
+  position:absolute;
+  margin:0;
+  overflow:hidden;
+}
+.highlightTextarea .highlightTextarea-highlighter {
+  position:relative;
+  border:none;
+  padding:0;
+  margin:0;
+  color:transparent;
+  cursor:text;
+  overflow:hidden;
+  white-space:pre-wrap;
+  word-wrap:break-word;
+}
+.highlightTextarea.debug .highlightTextarea-highlighter {
+  color:#f00;
+  border:1px solid #f00;
+  margin:-1px;
+}
+.highlightTextarea mark {
+  line-height:25px;
+  color:transparent;
+  margin:0;
+  padding:0;
+}
+.highlightTextarea textarea,
+.highlightTextarea input {
+  position:absolute;
+  left:0;
+  top:0;
+  resize:none;
+  white-space:pre-wrap;
+  word-wrap:break-word;
+}
+.highlightTextarea .ui-wrapper {
+  margin:0 !important;
+}
+.highlightTextarea .ui-resizable-se {
+  bottom:15px;
+  right:0px;
+}
+
+.highlight{
+  background: #fecac6;
+}
+
+.fade-in {
+   -webkit-animation: 2s fade_in ease-in forwards;
+   -moz-animation: 2s fade_in ease-in forwards;
+   -ms-animation: 2s fade_in ease-in forwards;
+   animation: 2s fade_in ease-in forwards;
+}
+
+@-webkit-keyframes fade_in {from { opacity: 0; } to { opacity: 1; }}
+@-moz-keyframes fade_in {from { opacity: 0; } to { opacity: 1; }}
+@-ms-keyframes fade_in {from { opacity: 0; } to { opacity: 1; }}
+@keyframes fade_in {from { opacity: 0; } to { opacity: 1; }}
+
+

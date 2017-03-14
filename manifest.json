@@ -21,8 +21,8 @@
                 "https://www.youtube.com/*",
                 "https://twitter.com/*"
             ], 
-            "css": ["css/contentstyle.css"],
-            "js": ["jquery.js", "d3.min.js", "bundle.js"],
+            "css": ["css/contentstyle.css", "/css/jquery-ui.min.css"],
+            "js": ["jquery.js", "negword_array.js", "jquery.highlighttextarea.min.js", "d3.min.js", "bundle.js"],
             "run_at": "document_end" // run at start.
         }
     ],
@@ -35,7 +35,9 @@
         "tactly_logo.png",
         "x.png",
         "d3.min.js",
-        "content.js"
+        "jquery.js",
+        "negword_array.js",
+        "jquery.highlighttextarea.min.js"
     ],
 
     "permissions": [
