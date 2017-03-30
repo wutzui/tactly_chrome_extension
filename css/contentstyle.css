@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Arimo:700|Open+Sans:300,400i,600,700');
+@import url('https://fonts.googleapis.com/css?family=Arimo:700|Open+Sans:300,400i,600,700|Raleway:300,600');
 
 #tact-btn {  
   background-color: #FF2222;
@@ -31,6 +31,7 @@
   top: 0;
   left: 0;
   background-color: rgba(10, 10, 10, 0.5);
+  transition: 0.2s ease-in;
 }
 
 #tact-modal-in {
@@ -51,29 +52,65 @@
 }
 
 #tact-logo {
-  width: 100px;
-  height: 40px;
-  margin: 0 800px 0 0;
+  margin-left: 12px;
+  font-size: 15px;
+  letter-spacing: 2px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 600;
+  line-height: 40px;
+  color: #FF2222;
+  margin-right: 20px;
 }
 
-#tact-logo img{
-  width: 48px;
-  margin: 8px 0 0 8px;
+#tact-logo span {
+  font-weight: 300;
 }
 
-#modal-confirm {
-  width: 70px;
-  height: 18px;
-  transform: translate(10px, -10px);
-  border: solid 1.8px #C9C9C9;
-  border-radius: 30px;
+#slogan {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 300;
+  color: grey; 
+  letter-spacing: 2px;
+  font-size: 15px;
+  margin-right: 580px;
+}
+
+.modal-close {
   color: #C9C9C9;
-  font-size: 12px;
-  font-family: 'Arimo', sans-serif;
-  text-align: center;
-  line-height: 18px;
-  letter-spacing: 0.5px;
-  cursor: pointer;
+  position: absolute;
+  display: inline-block;  
+  margin-top: 9px;
+  width: 1px;
+  height: 22px;
+  background-color: currentColor;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.modal-close:before {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 12px;
+  width: 8px;
+  height: 8px;
+  border-bottom: solid 1px #C9C9C9;
+  border-left: solid 1px #C9C9C9;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.modal-close:after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 1px;
+  width: 8px;
+  height: 8px;
+  border-top: solid 1px #C9C9C9;
+  border-right: solid 1px #C9C9C9;
+  -webkit-transform: rotate(-45deg);
+          transform: rotate(-45deg);
 }
 
 /*******************************************************************/
@@ -96,7 +133,7 @@
 
 #modal-text-instruct {
   margin-bottom: 5px;
-  font-size: 14px;
+  font-size: 13px;
   color: #95989A;
 }
 
@@ -104,7 +141,7 @@
   width: 639px;
   height: 70px;
   font-size: 16px; 
-  line-height: 25px;
+  line-height: 23px;
   margin: 0;
   border-radius: 3px;
   border: solid 0.2px #C1C1C1;
@@ -139,12 +176,25 @@ textarea:focus {
   animation: 0.25s fade_in ease-in forwards;
 }
 
-.modal-left-2-red {
-  background-color: #FFE6E6;c
+#tact-amount {
+  margin-right: 6px;
+  font-size: 20px;
+  font-family: 'Arimo', sans-serif;
+  color: #FF2222;
+  display: inline-block;
+}
+
+#modalLeft_2_text {
+  letter-spacing: 0.3px;
+  line-height: 40px;
+}
+
+.red {
+  background-color: #FFE6E6;
   transition: 0.2s ease-in;
 }
 
-.modal-left-2-blue {
+.blue {
   background-color: #CAF0FF;
   transition: 0.2s ease-in;
 }
@@ -267,7 +317,7 @@ textarea:focus {
   width: 190px;
   height: 210px;
   margin: 0;
-  border-bottom: solid 0.5px #BEBEBE;
+/*  border-bottom: solid 0.5px #BEBEBE;*/
 }
 
 /*donut chart content*/
@@ -285,50 +335,83 @@ textarea:focus {
 }
 
 #chart-ratio {
+  margin-top: 10px;
   font-size: 55px;
   font-weight: 300;
-  line-height: 58px;
+  line-height: 40px;
 }
 
 #chart-ratio-s {
+  margin-top: 10px;
   font-size: 55px;
   font-weight: 300;
-  line-height: 58px;
+  line-height: 40px;
 }
+
+#chart-ratio span {
+  margin-left: 2px;
+  font-size: 15px;
+} 
+
+#chart-ratio-s span {
+  margin-left: 2px;
+  font-size: 15px;
+} 
 
 #chart-desc {
   font-size: 12px;
   color: #838383;
   width: 100px;
   margin-left: 25px;
+  font-weight: 700;
+  line-height: 14px;
 }
 
 #chart-desc span {
-  font-weight: 700;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 13px;
 }
 
-#modal-right-2 {
+#modal-confirm {
   position: absolute;
-  top: 380px;
+  top: 360px;
   width: 190px;
-  height: 60px;
-  margin: 20px 0;
-}
-
-#tact-amount {
-  width: 60px;
-  height: 60px;
-  font-size: 40px;
-  font-family: 'Arimo', sans-serif;
-}
-
-#tact-amount-disc {
-  width: 120px;
-  height: 60px;
+  height: 25px;
+  border-radius: 25px;
   font-size: 13px;
-  font-family: 'Open Sans', sans-serif;
-  color: #838383;
+  font-family: 'Arimo', sans-serif;
+  text-align: center;
+  line-height: 25px;
   letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.2s ease-in;
+}
+
+.confirm-red {
+  background-color: transparent;
+  color: #FF2222;
+  border: 1px solid #FF2222;
+  transition: 0.2s ease-in;
+}
+.confirm-red:hover {
+  background-color: #FF2222;
+  color: white;
+  transition: 0.2s ease-in;
+  border: 1px solid #FF2222;
+}
+
+.confirm-blue {
+  background-color: #31CFFF;
+  color: white;
+  border: 1px solid #31CFFF;
+  transition: 0.2s ease-in;
+}
+.confirm-blue:hover {
+  background-color: transparent;
+  color: #31CFFF;
+  border: 1px solid #31CFFF;
+  transition: 0.2s ease-in;
 }
 
 /*******************************************************************/
@@ -368,14 +451,15 @@ textarea:focus {
 	font-size: 24px;
 	line-height: 17px;
 	font-family: 'Open Sans', sans-serif;
+  letter-spacing: 1px;
 }
 
-#comfirm-one-p {
+#confirm-one-p {
 	font-size: 15px;
 	line-height: 22px;
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
-	width: 260px;
+	width: 240px;
 	margin: 0 auto;
 	letter-spacing: 0.5px;
 }
@@ -410,21 +494,43 @@ textarea:focus {
 #confirm-one-back {
   width: 100px;
   height: 20px;
-  border: solid 1.8px black;
   border-radius: 30px;
   text-align: center;
   cursor: pointer;
   margin-right: 17px;
 }
 
+.confirm-one-back-red {
+  border: solid 1px #FF2222;
+  background-color: #FF2222;
+  color: white;
+}
+
+.confirm-one-back-blue {
+  border: solid 1px #31CFFF;
+  background-color: transparent;
+  color: #31CFFF;
+}
+
 #confirm-one-confirm {
   width: 100px;
   height: 20px;
-  border: solid 1.8px black;
   border-radius: 30px;
   text-align: center;
   cursor: pointer;
   margin-left: 17px;
+}
+
+.confirm-one-confirm-red {
+  border: solid 1px #FF2222;
+  background-color: transparent;
+  color: #FF2222;
+}
+
+.confirm-one-confirm-blue {
+  border: solid 1px #31CFFF;
+  background-color: #31CFFF;
+  color: white;
 }
 
 /*******************************************************************/
@@ -460,7 +566,7 @@ textarea:focus {
   float: right;
   height: 5px;
   background-color: #FF2222;
-  border-radius: 5px;
+  border-radius: 10px;
   margin: 12.5px;
 }
 

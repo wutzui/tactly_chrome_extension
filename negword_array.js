@@ -4,9 +4,9 @@ var negwordArray = [
 "ass",
 "slut",
 "gay",
-"trash",  
+"trash",
 "stink",
-"fake", 
+"fake",
 "die",
 "fucker",
 "awful",
@@ -39,5 +39,14 @@ var negwordArray = [
 "damn",
 "goddamn",
 "sperm",
-"sucker"
+"sucker",
+"shit",
+"sexual",
+"hell",
+"jackass",
+"lesbian",
+"nigger",
+"pussy",
+"junk",
+"prison"
 ];

@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Arimo:700|Open+Sans:300,400i,600,700');
+@import url('https://fonts.googleapis.com/css?family=Arimo:700|Open+Sans:300,400i,600,700|Raleway:300,600');
 
 body {
   width: 200px;
-  height: 80px;
   font-family: 'Open Sans', sans-serif;
   padding: 10px;
 }
@@ -13,30 +12,40 @@ body {
 
 #title {
   text-align: center;
-  font-size: 14px;
+}
+
+.logo {
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Raleway', sans-serif;
   font-weight: 600;
-  letter-spacing: 0.5px;
-  margin: 0 auto;
+  color: #FF2222;
+  margin-bottom: 15px;
 }
 
-#title img {
-	width: 60px;
+.logo span {
+  font-weight: 300;
 }
 
-#title span {
+.title-text span {
 	font-weight: 300;
 }
 
 .title-text {
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
 	transform: translateY(-8px);
 }
 
 #switch-container {
 	margin-top: 10px;
+  margin-bottom: 0px;
 }
 
 .switch-text p{
 	font-size: 13px;
+  letter-spacing: 0.25px;
 	transform: translateY(-6px);
 }
 
@@ -46,7 +55,7 @@ body {
   display: inline-block;
   width: 40px;
   height: 20px;
-  margin-left: 74px;
+  margin-left: 71px;
 }
 
 /* Hide default HTML checkbox */
@@ -102,6 +111,57 @@ hr {
   border: 0;
   background-color: #DEDEDE;
   height: 0.5px;
+  width: 100%;
 }
 
+.site-link {
+  margin-top: 20px;
+  width: 100%;
+  height: 22px;
+  font-size: 12px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  border: 1px solid #FF2222;
+  border-radius: 20px;
+  text-align: center;
+  background-color: transparent;
+  transition: 0.2s ease-in;
+  color: #FF2222;
+}
 
+.site-link:hover {
+  background-color: #FF2222;
+  transition: 0.2s ease-in;
+}
+
+.site-link a {
+  text-decoration: none;
+  color: #FF2222;
+  transition: 0.2s ease-in;
+}
+
+.site-link:hover a {
+  color: white;
+  transition: 0.2s ease-in;
+}
+
+.feedback-link {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: 0.5px;
+  opacity: 0.8;
+  transition: 0.2s ease-in;
+}
+.feedback-link:hover {
+  opacity: 1;
+  transition: 0.2s ease-in;
+}
+
+.feedback-link a {
+  color: grey;
+}
+
+a:focus {
+  outline:0;
+}
